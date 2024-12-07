@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Kalnia:wght@100..700&family=Love+Ya+Like+A+Sister&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Barra de navegación*/
+.barra-navegacion{
+    width: 90%;
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra-navegacion ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra-navegacion ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+.barra-navegacion ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.img-logo{
+    height: 50px;
+}
+
+/*barra seccion*/
+ .barra-section{
+    width: 100%;
+    height: 250px;
+    background-image: url("../IMG/wallpaper/1920-x-1080-night-city-aesthetic-76iqhxmv1xtgjegb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+ }
+ .titulo-vbienvenido{
+    font-family: roboto;
+    font-weight: 500;
+    color: #ba4cc8;
+    font-size: 30px;
+ }
+ .parrafo-section{
+    color: #b157bc;
+ }
+ .btn-30,
+.btn-30 *,
+.btn-30 :after,
+.btn-30 :before,
+.btn-30:after,
+.btn-30:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-30 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #441d57;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 60%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-30:disabled {
+  cursor: default;
+}
+.btn-30:-moz-focusring {
+  outline: auto;
+}
+.btn-30 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-30 [hidden] {
+  display: none;
+}
+.btn-30 {
+  border-radius: 999px;
+  border-width: 1px;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.btn-30 span {
+  mix-blend-mode: difference;
+}
+.btn-30:before {
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: -200%;
+  transform: translateX(-50%);
+  transition: height 0.3s;
+}
+.btn-30:hover:before {
+  height: 400%;
+}
+.btn-30 .text-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.btn-30 .text {
+  display: block;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-30:hover .text {
+  -webkit-animation: move-up-alternate 0.3s ease forwards;
+  animation: move-up-alternate 0.3s ease forwards;
+}
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+ /*principal*/
+ .main-content{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.titulo-main{
+    font-family: roboto;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin: 80px 0;
+    font-size: 40px;text-decoration: overline;
+}
+ .logo-habilidades{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+ }
+ .logo-main{
+    height:100px;
+ }
+ .parrafo-main{
+    text-align: center;
+    margin: 60px 0;
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 20px;
+}
+.barra-section-relleno{
+    width: 100%;
+    height: 150px;
+    background-image: url("../IMG/wallpaper/1920-x-1080-night-city-aesthetic-76iqhxmv1xtgjegb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+}
+.contenido-principio{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+    position: relative;
+}
+.div-principio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.logo-html{
+    height: 100px;
+    width: 100px;
+    margin: 20px 0;
+}
+.logo-css{
+    height: 100px;
+    width: 80px;
+    margin: 20px 0;
+}
+.mi-experiencia{
+    background-image: url("../IMG/wallpaper/1920-x-1080-night-city-aesthetic-76iqhxmv1xtgjegb.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: roboto;
+    font-size: 40px;
+}
+.tituloabc{
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 30px;
+
+}
+.pRf{
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 20px;
+    width: 60%;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 20px;
+
+}
