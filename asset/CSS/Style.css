@@ -3,102 +3,165 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
+    text-decoration: none;
+    list-style: none;
 }
+
 /*barra de navegacion*/
 .barra-navegacion{
-    height: 40px;
+    height: 60px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     position: absolute;
     z-index: 10;
 }
-.barra-navegacion > h1{
-    margin: 0 0 0 30px;
-    font-size: 20px;
-    color: #4b5a67;
-}
-.barra-navegacion > div{
-    display: flex;
-    gap: 60px;
-    margin: 0 40px 0 0;
-}
-.barra-navegacion > div a{
-    text-decoration: none;
-    color: #4f4f4f;
-    font-size: 13px;
-    position: relative;
-    text-shadow: 0 0 10px #ffffff33;
-}
-.barra-navegacion > div a:nth-child(1){
-    color: #000;
-}
-.barra-navegacion > div a::before{
+
+.nombre-navegacion{
     position: absolute;
-    content: '';
-    height: 2px;
-    width: 3px;
-    background: #fff;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: .6s ease;
+    margin: 20px 10px;
+    font-size: 20px;
+    color:#000;
 }
-.barra-navegacion > div a:hover::before{
-    opacity: 1;
-    width: 40px;
+.barra-navegacion ul{
+    float: right;
+    margin: 0 20px 0 0;
+    position: relative;
+}
+.barra-navegacion ul li{
+    display: inline-block;
+    margin: calc(25px - 7px) 10px;
+}
+.barra-navegacion ul li a{
+    color: #000;
+    font-size: 13px;
+}
+.input-check{
+    display: none;
+}
+.check-btn{
+    float: right;
+    display: none;
+    position: fixed;
+}
+.check-btn img{
+    height: 30px;
+    margin: 15px 10px 15px 0;
+    cursor: pointer;
+}
+.btn-contactos{
+    background-color: #fbc;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /*hero*/
+
 .hero{
     height: 100vh;
     width: 100%;
+    position: relative;
 }
-.overlay{
-    height: 100%;
-    width: 100%;
+.hero > img{
     position: absolute;
-    top: 0;
-    left: 0;
-    background: #000;
-    mix-blend-mode: overlay;
-    opacity: .5;
 }
-.hero > div{
+.hero-contenido{
     height: 100%;
     width: 100%;
     position: relative;
-    background-image: url("../Resource/wallpaper/3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-}
-.hero > div > h1{
-    font-size: 50px;
-    transform: translateY(130px);
     text-align: center;
-    color: #4b5a67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.hero > div > p{
-    transform: translateY(150px);
-    text-align: center;
-    color: #5a6d7d;
+.hero-contenido h1{
+    font-size: 80px;
 
 }
-.Redes-sociales-esquina{
-    position: absolute;
-    right: 10px;
-    bottom: 40px;
-    height: 90px;
+
+/*main*/
+/*secctio 1*/
+.section-1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
 }
-.Redes-sociales-esquina a{
-    font-size: 20px;
-    color: #fff;
+.contenido-sobre-luigi{
+    height: 300px;
+    background: #fff;
+    width: 500px;
+    text-align: center;
+    position: relative;
 }
+.contenido-sobre-luigi p{
+    position: absolute;
+    top: 50%;
+}
+.contenido-sobre-luigi h1{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    width: 100%;
+}
+.img-seccion1{
+    height: 350px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px #000;
+}
+
+/*seccion 2*/
+
+.section-2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+}
+.section-2 > p{
+    position: absolute;
+    bottom: 0;
+    width: 600px;
+    padding: 20px;
+}
+.targetas-habilidaes{
+    height: 200px;
+    width: 200px;
+    transform: translateY(-20px);
+
+    animation: animacionHabilidades 8s ease infinite;
+}
+.targetas-habilidaes:nth-child(2){
+    animation-delay: 1s;
+}
+.targetas-habilidaes:nth-child(3){
+    animation-delay: 2s;
+}
+@keyframes animacionHabilidades {
+    0%{}
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{}
+}
+.img-habilidades{
+    height: 200px;
+}
+
+
+
+
+
+
+

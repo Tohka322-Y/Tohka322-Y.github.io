@@ -1,37 +1,99 @@
-
-
+/*Celulares*/
 @media screen and (max-width:767px){
-    /*Barra de navegacion*/
-    .barra-navegacion{
-        position: absolute;
+    /*barra de navegacion resposive*/
+    .check-btn{
+        display: block;
+        right: 0;
     }
-    .barra-navegacion > div a{
-        color: #fff;
+    .btn-contactos{
+        background-color: rgb(245, 60, 106)
     }
-    .barra-navegacion > div a:nth-child(1){
-        color: #fff;
+    .barra-navegacion ul{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        bottom: 0;
+        left: -100%;
+        text-align: center;
+        transition: all 1s;
+        background: #fbc;
+        z-index: 100;
     }
-    .barra-navegacion h1{
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-60%,0);
+    .barra-navegacion ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
-    .barra-navegacion div{
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        transform: translate(-50%,0);
+    .barra-navegacion ul li a{
+        font-size: 25px;
+    }
+    #check:checked ~ .lista-de-navegacion{
+        left: 0px;
+        z-index: 100;
     }
 
     /*hero*/
-    .hero > div > h1{
-        font-size: 30px;
-    transform: translateY(170px);
+    .hero-contenido h1{
+        font-size: 40px;
     }
-    .hero > div > p{
-        transform: translateY(200px);
-        color: #3e5897;
+    .hero-contenido h2{
+        font-size: 15px;
     }
 
+    /*main*/
+    /*seccion 1*/
+    .section-1{
+        flex-direction: column;
+    }
+    .section-1 img{
+        height: 180px;
+        transform: translateY(10px);
+    }
+    .contenido-sobre-luigi{
+        height: 50%;
+        width: 200px;
+    }
+    .contenido-sobre-luigi h1{
+        font-size: 30px;
+        top: 40px;
+        width: 300px;
+    }
+    .contenido-sobre-luigi p{
+        font-size: 14px;
+        bottom: 0;
+    }
+
+    /*seccion 2*/
+
+    .section-2{
+        display: block;
+    }
+    .section-2 >p{
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        font-size: 15px;
+    }
+    .targetas-habilidaes{
+        position: absolute;
+        top: 100px;
+    }
+    .img-habilidades{
+        height: 100px;
+    }
+    .targetas-habilidaes:nth-child(2){
+        right: 0;
+    }
+    .targetas-habilidaes:nth-child(3){
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
+
+/*tables*/
+@media screen and (max-width:952px) {
+    
 }
